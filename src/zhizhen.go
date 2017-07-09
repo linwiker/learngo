@@ -1,12 +1,19 @@
 package main
 
-import (
-	"fmt"
-)
+import "fmt"
+
+//
+
+//func main() {
+//	str := "Go is a beautiful language!"
+//	for pos, char := range str {
+//		fmt.Printf("%d %c \n", pos, char)
+//	}
+//}
 
 func main() {
-	a := 1
-	a++
-	var p *int = &a
-	fmt.Print(*p)
+	for i := 0; i<7 ; i++ {
+		if i%2 == 0 { continue }
+		fmt.Println("Odd:", i)
+	}
 }

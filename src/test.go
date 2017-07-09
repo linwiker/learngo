@@ -1,17 +1,19 @@
 package main
 
-import (
-	"fmt"
-)
-var v int = 2
-func main()  {
-	i, j := 42, 2701
-	p := &i
-	fmt.Println(*p)
-	*p = 21
-	fmt.Println(i)
-	fmt.Println(v)
-	p = &j
-	*p = *p / 37
-	fmt.Println(j)
+import "fmt"
+
+func main() {
+	k := 6
+	switch k {
+		case 4: 
+			fmt.Println("was <= 4"); fallthrough;
+		case 5:
+			fmt.Println("was <= 5"); fallthrough;
+		case 6:
+			fmt.Println("was <= 6"); fallthrough;
+		case 7:
+			fmt.Println("was <= 7"); fallthrough;
+		default:
+			fmt.Println("default case")
+	}
 }

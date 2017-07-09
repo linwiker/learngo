@@ -32,6 +32,11 @@ func main() {
 	//	fmt.Println(Book2.title, Book2.author, Book2.subject, Book2.book_id)
 	printBook(&Book1)
 	printBook(&Book2)
+
+	s := []int {1, 2, 3}
+	fmt.Println(s[1])
+	z := make([]int, 3, 5)
+	fmt.Println(len(z), cap(z), z[1])
 }
 
 
